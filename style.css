@@ -111,3 +111,44 @@ ul {
     padding: 8px 35px;
     border-radius: 0.5em;
 }
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20% 8% 20%;
+}
+
+.info-maintext {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    color: #1F2937;
+    font-weight: 300;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.card-box {
+    width: 150px;
+    height: 150px;
+    border: solid 3px #3882F6;;
+    border-radius: 10px;
+}
+/* 
+.quote {
+    border: solid 2px red;
+}
+/*
