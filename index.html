@@ -4,23 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Title of the page</title>
+        <title>My awesome website</title>
     </head>
     <body>
         <div class="content">
-            <div class="header">
+            <header>
                 <div class="header-container">
                     <div class="header-menu">
                         <div class="header-logo">Header Logo</div>
-                        <ul class="header-links">
-                            <li><a href="#">header link one</a></li>
-                            <li><a href="#">header link two</a></li>
-                            <li><a href="#">header link three</a></li>
-                        </ul>
+                        <nav>
+                            <ul class="header-links">
+                                <li><a href="#">header link one</a></li>
+                                <li><a href="#">header link two</a></li>
+                                <li><a href="#">header link three</a></li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="hero">
                         <div class="hero-left">
-                            <div class="hero-maintext">This website is awesome</div>
+                            <div class="hero-maintext"><h1>This website is awesome</h1></div>
                             <div class="hero-subtext">This website has some subtext that goes under 
                                 the main title. It's a smaller font and the color is lower 
                                 contrast</div>
@@ -31,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </header>
 
             <div class="infos">
                 <div class="infos-maintext"> Some random information.</div>
@@ -65,17 +67,19 @@
             </div>
 
             <div class="cta">
-                <div class="cta-left">
-                    <div class="cta-text">Call to action! it's time!</div>
-                    <div class="cta-subtext">Sign up for our product by clicking that button
-                        right over there!</div>
+                <div class="cta-container">
+                    <div class="cta-left">
+                        <div class="cta-maintext">Call to action! it's time!</div>
+                        <div class="cta-subtext">Sign up for our product by clicking that button
+                            right over there!</div>
+                    </div>
+                    <button>Sign-up</button>
                 </div>
-                <button>Sign-up</button>
             </div>
+        </div>
 
-        </div>
-        <div class="footer">
+        <footer>
             <p>Copyright © The Odin Project 2021</p>
-        </div>
+        </footer>
     </body>
 </html>

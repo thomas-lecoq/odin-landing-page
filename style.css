@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root{
+  --max1: 60%;
+  --max2: 50%;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -8,6 +13,27 @@ body {
   justify-content: space-between;
   font-family: Roboto, sans-serif;
   font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: #1F2937;
+    text-align: center;
+    color: #E5E7EB;
+    padding: 20px;
 }
 
 ul {
@@ -25,14 +51,8 @@ a:hover {
     color: #bdbdbd;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    background-color: #1F2937;
-}
-
 .header-container {
-    min-width: 60%;
+    max-width: var(--max);
     margin-block: 10px 110px;
 }
 
@@ -60,7 +80,6 @@ a:hover {
     color: #E5E7EB;
 }
 
-
 .hero {
     display: flex;
     justify-content: space-between;
@@ -71,9 +90,6 @@ a:hover {
 }
 
 .hero-maintext {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
     width: 330px;
 }
 
@@ -112,13 +128,14 @@ a:hover {
     color: #F9FAF8;
 }
 
-
 .infos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    max-width: var(--max2);
+    margin-inline: auto;
     padding-block : 40px 100px;
 }
 
@@ -157,7 +174,7 @@ a:hover {
 
 .quote {
     background-color: #E5E7EB;
-    padding-block: 110px;
+    padding-block: 150px;
     padding-inline: 200px;
 }
 
@@ -165,6 +182,9 @@ a:hover {
     display: flex;
     flex-direction: column;
     color: #1F2937;
+    max-width: var(--max2);
+    margin-inline: auto;
+    gap: 16px;
 }
 
 .quote-text {
@@ -181,10 +201,44 @@ a:hover {
     font-size: 24px;
 }
 
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block : 150px 150px;
+}
 
-.footer {
-    background-color: #1F2937;
-    text-align: center;
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    max-width: var(--max1);
+    background-color: #3882F6;
     color: #E5E7EB;
-    padding: 20px;
+    border-radius: 10px;
+    padding-inline: 100px;
+    padding-block: 45px;
+    gap: 100px
+}
+
+.cta-container button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding-inline: 30px;
+    padding-block: 6px;
+    font-weight: 900;
+}
+
+.cta-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 500px;
+}
+
+.cta-maintext{
+    font-weight: 900;
 }
